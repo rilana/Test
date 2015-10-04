@@ -1,0 +1,15 @@
+﻿
+@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model EPiServerSite4.Models.Pages.StandardPageEE
+
+@* Render the TopNavContentArea property in the TopNav section defined in the layout *@
+@section TopNav {
+
+    @Html.PropertyFor(m => m.TopNavContentArea)
+
+}
+<div>
+    @Html.PropertyFor(m => m.MainBody)
+</div>

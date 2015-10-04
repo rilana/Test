@@ -1,0 +1,31 @@
+﻿@model EPiServerSite4.Models.Pages.PageType2
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>PageType2</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShowTeaser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShowTeaser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EventStartTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventStartTime)
+        </dd>
+
+    </dl>
+</div>
+

@@ -1,0 +1,21 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model EPiServerSite3.Models.Pages.StartPage
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index bla bla</h2>
+@* Render the TopNavContentArea property in the TopNav section defined in the layout *@
+@section TopNav {
+
+    @Html.PropertyFor(m => m.TopNavContentArea)
+
+}
+<div>
+  @Html.PropertyFor(x => x.Mounth)
+</div>
+
+

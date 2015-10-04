@@ -1,0 +1,14 @@
+﻿@model EPiServerSite3.Models.Blocks.TopNavViewModel
+
+<div>
+    @if (Model.PageChildren.Any())
+    {
+        @* Render nav menu items *@
+        <ul>
+            @foreach (var page in Model.PageChildren)
+            {
+                <li>@Html.ContentLink(page)</li>
+            }
+        </ul>
+    }
+</div>
